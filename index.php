@@ -23,7 +23,6 @@
           <a href="#" class="signup-show">新規登録</a>
           <a href="#" class="login">ログイン</a>
         </div>
-        <!-- <span class="fa fa-bars menu-icon"></span> -->
         <span class="menu-icon"><i class="fa fa-bars"></i></span>
       </div>
     </header>
@@ -39,7 +38,6 @@
           <form method="POST" action="confirm.php">
             <input class="form-control" type="text" name="email" placeholder="メールアドレス">
             <input class="form-control" type="password" name="password" placeholder="パスワード">
-            <!-- <input class="form-control" type="text" name="password" placeholder="パスワード"> -->
             <input class="submit-btn" type="submit" value="新規登録">
           </form>
         </div>
@@ -56,7 +54,6 @@
             <input class="form-control" type="text" placeholder="メールアドレス">
             <input class="form-control" type="password" placeholder="パスワード">
             <input class="submit-btn" type="submit" value="ログイン">
-            <!-- <div class="submit-btn">ログイン</div> -->
           </form>
         </div>
       </div>
