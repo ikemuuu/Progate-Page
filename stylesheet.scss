@@ -1,0 +1,418 @@
+/* CSSのリセット*/
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa {
+  display: none;
+}
+/*  */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+
+  h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+  }
+  p {
+    opacity: 0.7;
+  }
+
+  .btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+
+    p {
+      margin: 10px 0;
+    }
+    .signup {
+      background-color: #239b76;
+    }
+    .facebook {
+      background-color: #3b5998;
+      margin-right: 10px;
+    }
+    .twitter {
+      background-color: #55acee;
+    }
+  }
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+/* .fa {
+  margin-right: 5px;
+} */
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+
+  .header-left {
+    float: left;
+
+    .logo {
+      width: 124px;
+      margin-top: 20px;
+    }
+  }
+
+  .header-right {
+    float: right;
+    margin-right: -25px;
+    /*display: none;*/
+
+    a {
+      line-height: 65px;
+      padding: 0 25px;
+      color: white;
+      display: block;
+      float: left;
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+  
+  .menu-icon {
+    display: none;
+    // display: block;
+    color: white;
+    font-size: 25px;
+    padding: 21px 0;
+    float: right;
+  }
+}
+
+
+#signup-modal, #login-modal {
+  display: none;
+}
+
+/*モーダル*/
+.signup-modal-wrapper, .login-modal-wrapper{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  /* top: 20%;
+  left: 38%; */
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form, #login-form {
+  width: 100%;
+}
+
+#signup-form h2, #login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.form-control {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1.0;
+  }
+}
+/* */
+
+.lesson-wrapper {
+  height: 590px;
+  // padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+
+    h2, h3{
+      font-weight: normal;
+    }
+  }
+
+  .lesson {
+    height: 350px;
+    float: left;
+    width: 25%;
+
+    .lesson-icon {
+      position: relative;
+
+      p {
+        position: absolute;
+        top: 44%;
+        width: 100%;
+        color: white;
+      }
+    }
+    .text-contents {
+      width: 80%;
+      display: none;
+      /* margin-top: 15px; */
+      margin: 3% auto;
+      font-size: 13px;
+      // color: #f7f7f7;
+      color: #b3aeb5;
+    }
+    .text-active {
+      display: block;
+    }
+  }
+  .clear {
+    clear: left;
+  }
+}
+
+
+
+/*faq wrapper*/
+.faq-wrapper {
+  background-color: #e6ecf0;
+  text-align: center;
+  padding-bottom: 80px;
+  color: #5f5d60;
+
+  .heading{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+
+    h2 {
+    font-weight: normal;
+    }
+  }
+
+  #faq-list {
+    // width: 500px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+
+    .faq-list-item {
+      margin:10px;
+      border-bottom:1px solid #ccc;
+      position:relative;
+      cursor:pointer;
+      text-align: left;
+
+      h3 {
+        // font-size: 12px;
+        font-size: 16px;
+        padding-bottom: 8px;
+      }
+      span {
+        position:absolute;
+        top:0;
+        right:5px;
+        color:#ccc;
+        font-size:13px;
+      }
+      .answer {
+        width: 90%;
+        font-size: 14px;
+        padding: 5px 0px;
+        margin-bottom: 15px;
+        display: none;
+      }
+    }
+  }
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+
+    h2 {
+      font-weight: normal;
+      padding-bottom: 10px;
+    }
+    h3 {
+      font-weight: normal;
+    }
+  }
+
+  .message {
+    padding: 15px 40px;
+    background-color: #5dca88;
+    cursor: pointer;
+    box-shadow: 0 7px #1a7940;
+
+    &:active {
+      position: relative;
+      top: 7px;
+      box-shadow: none;
+    }
+  }
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  img {
+    width: 125px;
+  }
+  p {
+    color: #b3aeb5;
+    font-size: 12px;
+  }
+}
+
+.pagetop {
+  cursor: pointer;
+  position: fixed;
+  bottom: 90px;
+  right: 50px;
+  background-color: #ccc;
+  padding: 20px;
+  
+  .fa-chevron-up {
+    font-size: 30px;
+  }
+}
+
+// ここからconfirm.php
+  
+.info {
+  text-align: center;
+  background-color: #f8f8f8;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  width: 600px;
+  margin: 60px auto;
+  padding: 20px 0px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px #ccd7d4;
+
+  h1 {
+    font-weight: normal;
+  }
+
+  .black_circle p {
+    display: inline-block;
+  }
+}  
+
+// ここからlogin.php
+
+.login_check {
+  text-align: center;
+  background-color: #f8f8f8;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  width: 600px;
+  margin: 60px auto;
+  padding: 20px 0px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px #ccd7d4;
+
+  h1 {
+    font-weight: normal;
+  }
+}

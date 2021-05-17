@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+  .heading h2 {
+    font-size: 20px;
+  }
+  .lesson-wrapper {
+    height: 920px;
+  }
+  .lesson-wrapper .lesson {
+    width: 50%;
+  }
+  .lesson-wrapper .lesson .lesson-icon {
+    padding-top: 20px;
+  }
+  .lesson-wrapper .lesson .text-contents {
+    padding-bottom: 50px;
+  }
+  /* .lesson-icon:nth-of-type(3), .lesson-icon:nth-of-type(4) {
+    padding-top: 20px;
+  } */
+  footer {
+    text-align: center;
+  }
+}
+
+/* モバイル向けレイアウト */
+@media all and (max-width: 670px) {
+  .header-right {
+    display: none;
+  }
+  header .menu-icon {
+    display: block;
+  }
+  .top-wrapper {
+    text-align: left;
+  }
+  .top-wrapper h1 {
+    font-size: 24px;
+  }
+  .top-wrapper p {
+    font-size: 14px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .twitter {
+    margin-top: 10px;
+  }
+  .lesson-wrapper {
+    height: 1600px;
+  }
+  .lesson-wrapper .lesson {
+    width: 100%;
+  }
+  /* For Modal */
+  .modal {
+    width: 300px;
+  }
+  #signup-form h2, #login-form h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  #signup-form input, #login-form input {
+    width: 240px;
+  }
+  #submit-btn {
+    padding: 14px 93px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .faq-wrapper #faq-list {
+    width: 100%;
+  }
+  .faq-wrapper #faq-list .faq-list-item h3 {
+    width: 90%;
+    font-size: 12px;
+  }
+  .faq-wrapper #faq-list .faq-list-item .answer {
+    font-size: 12px;
+  }
+  .pagetop {
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ccc;
+    padding: 8px 10px;
+  }
+  .pagetop .fa-chevron-up {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
